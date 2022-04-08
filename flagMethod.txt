@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+  printf("Enter number : ");
+  int a;
+  int t = 0;
+  scanf_s("%d", &a);
+  for (int i = 2; i < a; i++)
+    if (a % i == 0) {
+      printf("This number is composite.");
+      t = 1;
+      break;
+    }
+
+  if (!t) printf("This number is prime.");
+
+  return 0;
+}
